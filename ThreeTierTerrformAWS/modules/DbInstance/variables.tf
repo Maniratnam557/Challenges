@@ -23,6 +23,8 @@ variable "db_username" {
   sensitive   = true
 }
 
+#sensitive data on terraform.tfvars which is part .gitignore as we dont want these in source control
+
 variable "db_password" {
   description = "Database administrator password"
   type        = string
