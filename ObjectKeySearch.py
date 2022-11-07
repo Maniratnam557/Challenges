@@ -12,7 +12,7 @@ def search(object,key):
            elif a==key[c1] and c1==len(key)-1 and keyfound==0:
             print(b)
             keyfound=1
-            break
+          
 
 try:
 
