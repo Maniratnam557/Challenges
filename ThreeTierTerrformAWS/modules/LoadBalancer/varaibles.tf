@@ -1,0 +1,10 @@
+variable "security_groups_web" {}
+variable "subnets_web" {}
+variable "target_id_web" {}
+variable "security_groups_app" {}
+variable "subnets_app" {}
+variable "target_id_app" {}
+variable "security_groups_db" {}
+variable "subnets_db" {}
+variable "target_id_db" {}
+variable "vpc_id" {}
