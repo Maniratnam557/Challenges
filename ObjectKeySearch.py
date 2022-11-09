@@ -4,14 +4,13 @@ def search(object,key):
     global keyfound
     if(type(object) is dict):
           for a,b in object.items():
-           if(keyfound==1):
-            break
            if(type(b) is dict and a==key[c1] and c1<len(key)-1):
             c1+=1
             search(b,key)
            elif a==key[c1] and c1==len(key)-1 and keyfound==0:
             print(b)
             keyfound=1
+            break
           
 
 try:
@@ -35,8 +34,7 @@ except:
   print("something went wrong Please check the inputs provided")
             
 
-#{"a":{"b":{"c" :{"d":"e"}},"c":"hello"}}
-#{"a":{"b":{"c" :{"b":"e"}},"c":"hello"}}
+
 
 
 
